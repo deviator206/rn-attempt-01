@@ -1,2 +1,2 @@
-# rn-workout-app
-same code base for web and app
+# rn-attempt-01
+code for react native attempt for simple android application
