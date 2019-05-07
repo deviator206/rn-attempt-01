@@ -1,18 +1,22 @@
-import { StyleSheet } from 'react-native';
-import { createAppContainer, createStackNavigator } from 'react-navigation';
-import Dashboard from './components/Dashboard';
-import Login from './components/Login';
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ * @flow
+ */
 
-export default  createAppContainer(createStackNavigator({
-  Login: {
-    screen: Login,
-  },
-  Dashboard: {
-    screen: Dashboard,
-  },
-}, {
-  headerMode: 'none',
-}));
+import React, { Component } from 'react';
+import { StyleSheet, View } from 'react-native';
+import Login from './components/Login';
+type Props = {};
+export default class App extends Component<Props> {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Login />
+      </View>
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   container: {

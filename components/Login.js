@@ -29,9 +29,9 @@ export default class Login extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View >
         <Text style={styles.paragraph}>
-          Login 
+          Login !
         </Text>
          <View >
         <TextInput
@@ -68,13 +68,6 @@ export default class Login extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    paddingTop: 10,
-    backgroundColor: '#ecf0f1',
-    padding: 8,
-  },
   paragraph: {
     margin: 24,
     fontSize: 18,
